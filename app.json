@@ -32,6 +32,15 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Raleway-Regular.ttf",
+            "./assets/fonts/Raleway-SemiBold.ttf"
+          ]
+        }
       ]
     ],
     "experiments": {
