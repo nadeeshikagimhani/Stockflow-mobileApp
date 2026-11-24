@@ -77,6 +77,16 @@ export default function TabLayout() {
             backgroundColor: '#272727'
           }
         }}/>
+
+        <Stack.Screen name='PastRequests' 
+        options={{
+          headerTitle: 'Past Requests',
+          headerBackButtonDisplayMode: 'minimal',
+          headerStyle: {
+            backgroundColor: '#272727'
+          }
+        }}/>
+
       </Stack>
 
         

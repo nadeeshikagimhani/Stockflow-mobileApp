@@ -14,6 +14,10 @@ const StockRequestMain = () => {
     router.push('/NewRequest')
   }, []);
 
+  const gotoPastequests = useCallback(()=> {
+    router.push('/PastRequests')
+  }, []);
+
   const cardDetails = [
     {
       title: "Active Products",
@@ -60,10 +64,15 @@ const StockRequestMain = () => {
         
         <Button 
           icon={Plus} variant='success'
-          onPress={gotoNewRequest}>New Request
+          onPress={gotoNewRequest}>
+            New Request
         </Button>
 
-        <Button icon={HistoryIcon} variant='outline'>Past Requests</Button>
+        <Button
+        icon={HistoryIcon} variant='outline'
+        onPress={gotoPastequests}>
+          Past Requests
+        </Button>
 
       </View>
     </View>
