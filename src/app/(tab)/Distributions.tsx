@@ -1,18 +1,11 @@
 // rnef = React Native Export Functional Component
 
+import DistributionsMain from '@/components/Screens/Distributions/DistributionsMain'
 import { View, Text } from 'react-native'
 
 const Distributions = () => {
   return (
-    <View style={{ flex:1, justifyContent: 'center'}}>
-      <Text
-      style={{
-        color: 'white',
-        fontSize: 25
-      }}>
-        Distributions
-      </Text>
-    </View>
+    <DistributionsMain/>
   )
 }
 

@@ -63,7 +63,7 @@ export default function TabLayout() {
           <Stack.Toolbar placement='right'>
             <Stack.Toolbar.Menu icon={Pending}>
               <Stack.Toolbar.MenuAction>
-                Switch Theme
+                Open menu
               </Stack.Toolbar.MenuAction>
             </Stack.Toolbar.Menu>
           </Stack.Toolbar>
@@ -81,6 +81,15 @@ export default function TabLayout() {
         <Stack.Screen name='PastRequests' 
         options={{
           headerTitle: 'Past Requests',
+          headerBackButtonDisplayMode: 'minimal',
+          headerStyle: {
+            backgroundColor: '#272727'
+          }
+        }}/>
+
+        <Stack.Screen name='RequestDetails' 
+        options={{
+          headerTitle: 'Request Details',
           headerBackButtonDisplayMode: 'minimal',
           headerStyle: {
             backgroundColor: '#272727'
